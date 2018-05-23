@@ -1,0 +1,61 @@
+.page-container {
+    height: 95vh;
+    border: 0.01rem solid;
+  }
+  
+  .flexbox {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .flexbox--row {
+    flex-direction: row;
+  }
+  
+  .flexbox--wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flexbox--center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .randomButton {
+    width: 13rem;
+    height: 2rem;
+    padding: 0rem;
+    border: 0.1rem solid;
+    margin-bottom: 1rem;
+  }
+  
+  .randomButton__link {
+    text-decoration: none;
+  }
+  
+  .searchbox {
+    width: 12rem;
+    padding: 0.5rem;
+    border: 0.1rem solid;
+    /* border-radius: 50px*/
+  }
+  
+  .searchbox__typebox {
+    border: none;
+    height: 1.5rem;
+  }
+  
+  .searchbox__typebox:focus {
+    outline: none;
+  }
+  
+  .searchbox__button {
+    cursor: pointer;
+    padding-left: 0.5rem;
+  }
+  
+  .result {
+    max-width: 80vw;
+    display: none;
+  }
+  
