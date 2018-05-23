@@ -6,35 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="page-container flexbox flexbox--center">
+    <div class="page-container">
 
-        <a class="randomButton__link" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
-            <div class="randomButton flexbox flexbox--center">
-                <p class="randomButton__text">Click here for a random article</p>
+        <div class="content flexbox flexbox--center">
+
+            <div class="mainTitle">
+                <h1 class="mainTitle__text">Wikipedia Viewer</h1>
             </div>
-        </a>
 
-        <div class="searchbox flexbox flexbox--center flexbox--row">
-            <input class="searchbox__typebox" type="text" name="searchvalue" placeholder="Type your search here">
-            <i class="fas fa-search searchbox__button" id="searchbox__btn"></i>
+            <a class="link link__random" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                <div class="randomButton flexbox flexbox--center">
+                    <p class="randomButton__text">Click for random article</p>
+                </div>
+            </a>
+
+            <div class="searchbox flexbox flexbox--center flexbox--row">
+                <input class="searchbox__typebox" type="text" name="searchvalue" placeholder="Type your search here">
+                <i onclick="loadDoc()" class="fas fa-search searchbox__button"></i>
+            </div>
+
+            <div class="result flexbox flexbox--center">
+            </div>
+
         </div>
 
-        <div class="result flexbox flexbox--center">
-            <div class="result__item">
-                <h3 class="result__title">Result title</h3>
-                <p class="result__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                    suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </div>
+        <div class="footer flexbox flexbox--flex-end">
+            <p class="footer__text">Coded by
+                <a href="https://github.com/baisho" target="_blank" class="link link__me">Bánk Horváth</a>.
+            </p>
         </div>
-
     </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
